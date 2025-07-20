@@ -1,12 +1,15 @@
 class_name Player extends CharacterBody2D
 
+# Character Variables
 var cardinal_direction : Vector2 = Vector2.DOWN
 var direction : Vector2 = Vector2.ZERO
 var state : String = "idle"
 var move_speed : float = 100.0
 
+# Onready Variables
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 @onready var sprite : Sprite2D = $Duck
+
 # Called when the character enters thescene tree for thefirst time.
 func _ready():
 	pass # Replace with function body
